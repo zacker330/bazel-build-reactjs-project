@@ -17,13 +17,6 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'postcss-loader'],
       },
       {
-        test: /\.(js|jsx)$/,
-        exclude: /(node_modules)/,
-        use: {
-          loader: 'swc-loader',
-        },
-      },
-      {
         test: /\.(png|jpe?g|gif)$/i,
         loader: 'file-loader',
         options: {
