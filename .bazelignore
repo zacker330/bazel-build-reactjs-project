@@ -5,6 +5,7 @@ ui/node_modules
 environments/dev/npm/node_modules
 environments/prod/npm/node_modules
 environments/test/npm/node_modules
+react-demo/node_modules
 environments/dev/node_modules
 environments/prod/node_modules
 environments/test/node_modules

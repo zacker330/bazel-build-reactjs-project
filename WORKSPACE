@@ -339,6 +339,7 @@ npm_translate_lock(
          "//:package.json",
          "//:pnpm-workspace.yaml",
          "//ui:package.json",
+         "//react-demo:package.json",
          "//ui/src:package.json",
     ],
 #    generate_bzl_library_targets = True,

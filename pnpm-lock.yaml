@@ -32,7 +32,7 @@ importers:
         version: registry.npmmirror.com/crypto-js@4.1.1
       react:
         specifier: 18.2.0
-        version: 18.2.0
+        version: registry.npmmirror.com/react@18.2.0
       react-dom:
         specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
@@ -133,6 +133,121 @@ importers:
       web-vitals:
         specifier: 3.1.0
         version: 3.1.0
+      webpack:
+        specifier: 5.88.2
+        version: registry.npmmirror.com/webpack@5.88.2(@swc/core@1.3.78)(webpack-cli@5.1.4)
+      webpack-cli:
+        specifier: 5.1.4
+        version: registry.npmmirror.com/webpack-cli@5.1.4(webpack-dev-server@4.15.1)(webpack@5.88.2)
+      webpack-dev-server:
+        specifier: 4.15.1
+        version: registry.npmmirror.com/webpack-dev-server@4.15.1(webpack-cli@5.1.4)(webpack@5.88.2)
+
+  react-demo:
+    dependencies:
+      crypto-js:
+        specifier: 4.1.1
+        version: registry.npmmirror.com/crypto-js@4.1.1
+      react:
+        specifier: 18.2.0
+        version: registry.npmmirror.com/react@18.2.0
+      react-dom:
+        specifier: 18.2.0
+        version: registry.npmmirror.com/react-dom@18.2.0(react@18.2.0)
+      react-hook-form:
+        specifier: 7.46.2
+        version: registry.npmmirror.com/react-hook-form@7.46.2(react@18.2.0)
+      react-router-dom:
+        specifier: 6.15.0
+        version: registry.npmmirror.com/react-router-dom@6.15.0(react-dom@18.2.0)(react@18.2.0)
+      styled-components:
+        specifier: 6.0.7
+        version: registry.npmmirror.com/styled-components@6.0.7(react-dom@18.2.0)(react@18.2.0)
+      tailwind-merge:
+        specifier: 1.14.0
+        version: registry.npmmirror.com/tailwind-merge@1.14.0
+      tailwindcss:
+        specifier: 3.3.3
+        version: registry.npmmirror.com/tailwindcss@3.3.3
+      typescript:
+        specifier: 4.9.3
+        version: registry.npmmirror.com/typescript@4.9.3
+    devDependencies:
+      '@bazel/ibazel':
+        specifier: 0.16.2
+        version: registry.npmmirror.com/@bazel/ibazel@0.16.2
+      '@swc/core':
+        specifier: 1.3.78
+        version: registry.npmmirror.com/@swc/core@1.3.78
+      '@testing-library/jest-dom':
+        specifier: 4.2.4
+        version: registry.npmmirror.com/@testing-library/jest-dom@4.2.4
+      '@testing-library/react':
+        specifier: 13.4.0
+        version: registry.npmmirror.com/@testing-library/react@13.4.0(react-dom@18.2.0)(react@18.2.0)
+      autoprefixer:
+        specifier: 10.4.15
+        version: registry.npmmirror.com/autoprefixer@10.4.15(postcss@8.4.29)
+      css-loader:
+        specifier: 6.8.1
+        version: registry.npmmirror.com/css-loader@6.8.1(webpack@5.88.2)
+      css-minimizer-webpack-plugin:
+        specifier: 5.0.1
+        version: registry.npmmirror.com/css-minimizer-webpack-plugin@5.0.1(webpack@5.88.2)
+      eslint:
+        specifier: 8.0.0
+        version: registry.npmmirror.com/eslint@8.0.0
+      file-loader:
+        specifier: 6.2.0
+        version: registry.npmmirror.com/file-loader@6.2.0(webpack@5.88.2)
+      glob:
+        specifier: 10.3.4
+        version: registry.npmmirror.com/glob@10.3.4
+      html-webpack-plugin:
+        specifier: 5.5.3
+        version: registry.npmmirror.com/html-webpack-plugin@5.5.3(webpack@5.88.2)
+      jest-cli:
+        specifier: 29.5.0
+        version: registry.npmmirror.com/jest-cli@29.5.0
+      jest-environment-jsdom:
+        specifier: 29.3.1
+        version: registry.npmmirror.com/jest-environment-jsdom@29.3.1
+      jest-junit:
+        specifier: 16.0.0
+        version: registry.npmmirror.com/jest-junit@16.0.0
+      jest-transform-stub:
+        specifier: 2.0.0
+        version: registry.npmmirror.com/jest-transform-stub@2.0.0
+      mini-css-extract-plugin:
+        specifier: 2.7.6
+        version: registry.npmmirror.com/mini-css-extract-plugin@2.7.6(webpack@5.88.2)
+      postcss:
+        specifier: 8.4.29
+        version: registry.npmmirror.com/postcss@8.4.29
+      postcss-loader:
+        specifier: 7.3.3
+        version: registry.npmmirror.com/postcss-loader@7.3.3(postcss-preset-env@9.1.3)(postcss@8.4.29)(webpack@5.88.2)
+      postcss-preset-env:
+        specifier: 9.1.3
+        version: registry.npmmirror.com/postcss-preset-env@9.1.3(postcss@8.4.29)
+      prettier:
+        specifier: 3.0.2
+        version: registry.npmmirror.com/prettier@3.0.2
+      purgecss-webpack-plugin:
+        specifier: 5.0.0
+        version: registry.npmmirror.com/purgecss-webpack-plugin@5.0.0(webpack@5.88.2)
+      style-loader:
+        specifier: 3.3.3
+        version: registry.npmmirror.com/style-loader@3.3.3(webpack@5.88.2)
+      swc-loader:
+        specifier: 0.2.3
+        version: registry.npmmirror.com/swc-loader@0.2.3(@swc/core@1.3.78)(webpack@5.88.2)
+      tsconfig-to-swcconfig:
+        specifier: 2.4.0
+        version: registry.npmmirror.com/tsconfig-to-swcconfig@2.4.0
+      web-vitals:
+        specifier: 3.1.0
+        version: registry.npmmirror.com/web-vitals@3.1.0
       webpack:
         specifier: 5.88.2
         version: registry.npmmirror.com/webpack@5.88.2(@swc/core@1.3.78)(webpack-cli@5.1.4)
@@ -436,7 +551,7 @@ packages:
       '@babel/runtime': 7.18.9
       '@testing-library/dom': 8.17.1
       '@types/react-dom': 18.0.6
-      react: 18.2.0
+      react: registry.npmmirror.com/react@18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: true
 
@@ -891,14 +1006,8 @@ packages:
       react: ^18.2.0
     dependencies:
       loose-envify: 1.4.0
-      react: 18.2.0
+      react: registry.npmmirror.com/react@18.2.0
       scheduler: 0.23.0
-
-  /react@18.2.0:
-    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
-    engines: {node: '>=0.10.0'}
-    dependencies:
-      loose-envify: 1.4.0
 
   /redent@3.0.0:
     resolution: {integrity: sha512-6tDA8g98We0zd0GvVeMT9arEOnTw9qM03L9cJXaCjrip1OO764RDBLBfrB4cwzNGDj5OA5ioymC9GkizgWJDUg==}
@@ -1098,7 +1207,7 @@ packages:
     version: 3.418.0
     engines: {node: '>=14.0.0'}
     dependencies:
-      '@smithy/types': registry.npmmirror.com/@smithy/types@2.3.4
+      '@smithy/types': registry.npmmirror.com/@smithy/types@2.3.5
       tslib: registry.npmmirror.com/tslib@2.6.2
     dev: false
 
@@ -3280,7 +3389,7 @@ packages:
       react-dom: '>=16.8.0'
     dependencies:
       '@floating-ui/dom': registry.npmmirror.com/@floating-ui/dom@1.5.1
-      react: 18.2.0
+      react: registry.npmmirror.com/react@18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
@@ -3294,7 +3403,7 @@ packages:
       react-dom: '>=16.8.0'
     dependencies:
       '@floating-ui/dom': registry.npmmirror.com/@floating-ui/dom@1.5.1
-      react: 18.2.0
+      react: registry.npmmirror.com/react@18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
@@ -3309,7 +3418,7 @@ packages:
     dependencies:
       '@floating-ui/react-dom': registry.npmmirror.com/@floating-ui/react-dom@1.3.0(react-dom@18.2.0)(react@18.2.0)
       aria-hidden: registry.npmmirror.com/aria-hidden@1.2.3
-      react: 18.2.0
+      react: registry.npmmirror.com/react@18.2.0
       react-dom: 18.2.0(react@18.2.0)
       tabbable: registry.npmmirror.com/tabbable@6.2.0
     dev: false
@@ -3325,7 +3434,7 @@ packages:
     dependencies:
       '@floating-ui/react-dom': registry.npmmirror.com/@floating-ui/react-dom@2.0.2(react-dom@18.2.0)(react@18.2.0)
       '@floating-ui/utils': registry.npmmirror.com/@floating-ui/utils@0.1.1
-      react: 18.2.0
+      react: registry.npmmirror.com/react@18.2.0
       react-dom: 18.2.0(react@18.2.0)
       tabbable: registry.npmmirror.com/tabbable@6.2.0
     dev: false
@@ -3347,7 +3456,7 @@ packages:
       react-dom: ^16 || ^17 || ^18
     dependencies:
       client-only: registry.npmmirror.com/client-only@0.0.1
-      react: 18.2.0
+      react: registry.npmmirror.com/react@18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
@@ -3359,7 +3468,7 @@ packages:
     peerDependencies:
       react: '>= 16'
     dependencies:
-      react: 18.2.0
+      react: registry.npmmirror.com/react@18.2.0
     dev: false
 
   registry.npmmirror.com/@humanwhocodes/config-array@0.6.0:
@@ -3742,7 +3851,7 @@ packages:
       framer-motion: registry.npmmirror.com/framer-motion@6.5.1(react-dom@18.2.0)(react@18.2.0)
       material-ripple-effects: registry.npmmirror.com/material-ripple-effects@2.0.1
       prop-types: registry.npmmirror.com/prop-types@15.8.1
-      react: 18.2.0
+      react: registry.npmmirror.com/react@18.2.0
       react-dom: 18.2.0(react@18.2.0)
       tailwind-merge: registry.npmmirror.com/tailwind-merge@1.14.0
     dev: false
@@ -3887,24 +3996,24 @@ packages:
       '@sinonjs/commons': 1.8.3
     dev: true
 
-  registry.npmmirror.com/@smithy/abort-controller@2.0.10:
-    resolution: {integrity: sha512-xn7PnFD3m4rQIG00h1lPuDVnC2QMtTFhzRLX3y56KkgFaCysS7vpNevNBgmNUtmJ4eVFc+66Zucwo2KDLdicOg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@smithy/abort-controller/-/abort-controller-2.0.10.tgz}
+  registry.npmmirror.com/@smithy/abort-controller@2.0.11:
+    resolution: {integrity: sha512-MSzE1qR2JNyb7ot3blIOT3O3H0Jn06iNDEgHRaqZUwBgx5EG+VIx24Y21tlKofzYryIOcWpIohLrIIyocD6LMA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@smithy/abort-controller/-/abort-controller-2.0.11.tgz}
     name: '@smithy/abort-controller'
-    version: 2.0.10
+    version: 2.0.11
     engines: {node: '>=14.0.0'}
     dependencies:
-      '@smithy/types': registry.npmmirror.com/@smithy/types@2.3.4
+      '@smithy/types': registry.npmmirror.com/@smithy/types@2.3.5
       tslib: registry.npmmirror.com/tslib@2.6.2
     dev: false
 
-  registry.npmmirror.com/@smithy/fetch-http-handler@2.2.1:
-    resolution: {integrity: sha512-bXyM8PBAIKxVV++2ZSNBEposTDjFQ31XWOdHED+2hWMNvJHUoQqFbECg/uhcVOa6vHie2/UnzIZfXBSTpDBnEw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@smithy/fetch-http-handler/-/fetch-http-handler-2.2.1.tgz}
+  registry.npmmirror.com/@smithy/fetch-http-handler@2.2.2:
+    resolution: {integrity: sha512-K7aRtRuaBjzlk+jWWeyfDTLAmRRvmA4fU8eHUXtjsuEDgi3f356ZE32VD2ssxIH13RCLVZbXMt5h7wHzYiSuVA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@smithy/fetch-http-handler/-/fetch-http-handler-2.2.2.tgz}
     name: '@smithy/fetch-http-handler'
-    version: 2.2.1
+    version: 2.2.2
     dependencies:
-      '@smithy/protocol-http': registry.npmmirror.com/@smithy/protocol-http@3.0.6
-      '@smithy/querystring-builder': registry.npmmirror.com/@smithy/querystring-builder@2.0.10
-      '@smithy/types': registry.npmmirror.com/@smithy/types@2.3.4
+      '@smithy/protocol-http': registry.npmmirror.com/@smithy/protocol-http@3.0.7
+      '@smithy/querystring-builder': registry.npmmirror.com/@smithy/querystring-builder@2.0.11
+      '@smithy/types': registry.npmmirror.com/@smithy/types@2.3.5
       '@smithy/util-base64': registry.npmmirror.com/@smithy/util-base64@2.0.0
       tslib: registry.npmmirror.com/tslib@2.6.2
     dev: false
@@ -3918,46 +4027,46 @@ packages:
       tslib: registry.npmmirror.com/tslib@2.6.2
     dev: false
 
-  registry.npmmirror.com/@smithy/middleware-stack@2.0.4:
-    resolution: {integrity: sha512-MW0KNKfh8ZGLagMZnxcLJWPNXoKqW6XV/st5NnCBmmA2e2JhrUjU0AJ5Ca/yjTyNEKs3xH7AQDwp1YmmpEpmQQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@smithy/middleware-stack/-/middleware-stack-2.0.4.tgz}
+  registry.npmmirror.com/@smithy/middleware-stack@2.0.5:
+    resolution: {integrity: sha512-bVQU/rZzBY7CbSxIrDTGZYnBWKtIw+PL/cRc9B7etZk1IKSOe0NvKMJyWllfhfhrTeMF6eleCzOihIQympAvPw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@smithy/middleware-stack/-/middleware-stack-2.0.5.tgz}
     name: '@smithy/middleware-stack'
-    version: 2.0.4
+    version: 2.0.5
     engines: {node: '>=14.0.0'}
     dependencies:
-      '@smithy/types': registry.npmmirror.com/@smithy/types@2.3.4
+      '@smithy/types': registry.npmmirror.com/@smithy/types@2.3.5
       tslib: registry.npmmirror.com/tslib@2.6.2
     dev: false
 
-  registry.npmmirror.com/@smithy/node-http-handler@2.1.6:
-    resolution: {integrity: sha512-NspvD3aCwiUNtoSTcVHz0RZz1tQ/SaRIe1KPF+r0mAdCZ9eWuhIeJT8ZNPYa1ITn7/Lgg64IyFjqPynZ8KnYQw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@smithy/node-http-handler/-/node-http-handler-2.1.6.tgz}
+  registry.npmmirror.com/@smithy/node-http-handler@2.1.7:
+    resolution: {integrity: sha512-PQIKZXlp3awCDn/xNlCSTFE7aYG/5Tx33M05NfQmWYeB5yV1GZZOSz4dXpwiNJYTXb9jPqjl+ueXXkwtEluFFA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@smithy/node-http-handler/-/node-http-handler-2.1.7.tgz}
     name: '@smithy/node-http-handler'
-    version: 2.1.6
+    version: 2.1.7
     engines: {node: '>=14.0.0'}
     dependencies:
-      '@smithy/abort-controller': registry.npmmirror.com/@smithy/abort-controller@2.0.10
-      '@smithy/protocol-http': registry.npmmirror.com/@smithy/protocol-http@3.0.6
-      '@smithy/querystring-builder': registry.npmmirror.com/@smithy/querystring-builder@2.0.10
-      '@smithy/types': registry.npmmirror.com/@smithy/types@2.3.4
+      '@smithy/abort-controller': registry.npmmirror.com/@smithy/abort-controller@2.0.11
+      '@smithy/protocol-http': registry.npmmirror.com/@smithy/protocol-http@3.0.7
+      '@smithy/querystring-builder': registry.npmmirror.com/@smithy/querystring-builder@2.0.11
+      '@smithy/types': registry.npmmirror.com/@smithy/types@2.3.5
       tslib: registry.npmmirror.com/tslib@2.6.2
     dev: false
 
-  registry.npmmirror.com/@smithy/protocol-http@3.0.6:
-    resolution: {integrity: sha512-F0jAZzwznMmHaggiZgc7YoS08eGpmLvhVktY/Taz6+OAOHfyIqWSDNgFqYR+WHW9z5fp2XvY4mEUrQgYMQ71jw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@smithy/protocol-http/-/protocol-http-3.0.6.tgz}
+  registry.npmmirror.com/@smithy/protocol-http@3.0.7:
+    resolution: {integrity: sha512-HnZW8y+r66ntYueCDbLqKwWcMNWW8o3eVpSrHNluwtBJ/EUWfQHRKSiu6vZZtc6PGfPQWgVfucoCE/C3QufMAA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@smithy/protocol-http/-/protocol-http-3.0.7.tgz}
     name: '@smithy/protocol-http'
-    version: 3.0.6
+    version: 3.0.7
     engines: {node: '>=14.0.0'}
     dependencies:
-      '@smithy/types': registry.npmmirror.com/@smithy/types@2.3.4
+      '@smithy/types': registry.npmmirror.com/@smithy/types@2.3.5
       tslib: registry.npmmirror.com/tslib@2.6.2
     dev: false
 
-  registry.npmmirror.com/@smithy/querystring-builder@2.0.10:
-    resolution: {integrity: sha512-uujJGp8jzrrU1UHme8sUKEbawQTcTmUWsh8rbGXYD/lMwNLQ+9jQ9dMDWbbH9Hpoa9RER1BeL/38WzGrbpob2w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@smithy/querystring-builder/-/querystring-builder-2.0.10.tgz}
+  registry.npmmirror.com/@smithy/querystring-builder@2.0.11:
+    resolution: {integrity: sha512-b4kEbVMxpmfv2VWUITn2otckTi7GlMteZQxi+jlwedoATOGEyrCJPfRcYQJjbCi3fZ2QTfh3PcORvB27+j38Yg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@smithy/querystring-builder/-/querystring-builder-2.0.11.tgz}
     name: '@smithy/querystring-builder'
-    version: 2.0.10
+    version: 2.0.11
     engines: {node: '>=14.0.0'}
     dependencies:
-      '@smithy/types': registry.npmmirror.com/@smithy/types@2.3.4
+      '@smithy/types': registry.npmmirror.com/@smithy/types@2.3.5
       '@smithy/util-uri-escape': registry.npmmirror.com/@smithy/util-uri-escape@2.0.0
       tslib: registry.npmmirror.com/tslib@2.6.2
     dev: false
@@ -3968,7 +4077,7 @@ packages:
     version: 2.1.9
     engines: {node: '>=14.0.0'}
     dependencies:
-      '@smithy/middleware-stack': registry.npmmirror.com/@smithy/middleware-stack@2.0.4
+      '@smithy/middleware-stack': registry.npmmirror.com/@smithy/middleware-stack@2.0.5
       '@smithy/types': registry.npmmirror.com/@smithy/types@2.3.4
       '@smithy/util-stream': registry.npmmirror.com/@smithy/util-stream@2.0.14
       tslib: registry.npmmirror.com/tslib@2.6.2
@@ -3978,6 +4087,15 @@ packages:
     resolution: {integrity: sha512-D7xlM9FOMFyFw7YnMXn9dK2KuN6+JhnrZwVt1fWaIu8hCk5CigysweeIT/H/nCo4YV+s8/oqUdLfexbkPZtvqw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@smithy/types/-/types-2.3.4.tgz}
     name: '@smithy/types'
     version: 2.3.4
+    engines: {node: '>=14.0.0'}
+    dependencies:
+      tslib: registry.npmmirror.com/tslib@2.6.2
+    dev: false
+
+  registry.npmmirror.com/@smithy/types@2.3.5:
+    resolution: {integrity: sha512-ehyDt8M9hehyxrLQGoA1BGPou8Js1Ocoh5M0ngDhJMqbFmNK5N6Xhr9/ZExWkyIW8XcGkiMPq3ZUEE0ScrhbuQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@smithy/types/-/types-2.3.5.tgz}
+    name: '@smithy/types'
+    version: 2.3.5
     engines: {node: '>=14.0.0'}
     dependencies:
       tslib: registry.npmmirror.com/tslib@2.6.2
@@ -4018,8 +4136,8 @@ packages:
     version: 2.0.14
     engines: {node: '>=14.0.0'}
     dependencies:
-      '@smithy/fetch-http-handler': registry.npmmirror.com/@smithy/fetch-http-handler@2.2.1
-      '@smithy/node-http-handler': registry.npmmirror.com/@smithy/node-http-handler@2.1.6
+      '@smithy/fetch-http-handler': registry.npmmirror.com/@smithy/fetch-http-handler@2.2.2
+      '@smithy/node-http-handler': registry.npmmirror.com/@smithy/node-http-handler@2.1.7
       '@smithy/types': registry.npmmirror.com/@smithy/types@2.3.4
       '@smithy/util-base64': registry.npmmirror.com/@smithy/util-base64@2.0.0
       '@smithy/util-buffer-from': registry.npmmirror.com/@smithy/util-buffer-from@2.0.0
@@ -6944,7 +7062,7 @@ packages:
       framesync: registry.npmmirror.com/framesync@6.0.1
       hey-listen: registry.npmmirror.com/hey-listen@1.0.8
       popmotion: registry.npmmirror.com/popmotion@11.0.3
-      react: 18.2.0
+      react: registry.npmmirror.com/react@18.2.0
       react-dom: 18.2.0(react@18.2.0)
       style-value-types: registry.npmmirror.com/style-value-types@5.0.0
       tslib: registry.npmmirror.com/tslib@2.6.2
@@ -10333,7 +10451,7 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17 || ^18
     dependencies:
-      react: 18.2.0
+      react: registry.npmmirror.com/react@18.2.0
     dev: false
 
   registry.npmmirror.com/react-is@16.13.1:
@@ -10364,7 +10482,7 @@ packages:
       react-dom: '>=16.8'
     dependencies:
       '@remix-run/router': registry.npmmirror.com/@remix-run/router@1.8.0
-      react: 18.2.0
+      react: registry.npmmirror.com/react@18.2.0
       react-dom: 18.2.0(react@18.2.0)
       react-router: registry.npmmirror.com/react-router@6.15.0(react@18.2.0)
     dev: false
@@ -10379,7 +10497,7 @@ packages:
       react: '>=16.8'
     dependencies:
       '@remix-run/router': registry.npmmirror.com/@remix-run/router@1.8.0
-      react: 18.2.0
+      react: registry.npmmirror.com/react@18.2.0
     dev: false
 
   registry.npmmirror.com/react-tailwindcss-select@1.8.5(react@18.2.0):
@@ -10390,7 +10508,7 @@ packages:
     peerDependencies:
       react: ^18.2.0
     dependencies:
-      react: 18.2.0
+      react: registry.npmmirror.com/react@18.2.0
     dev: false
 
   registry.npmmirror.com/react@18.2.0:
@@ -11151,7 +11269,7 @@ packages:
       css-to-react-native: registry.npmmirror.com/css-to-react-native@3.2.0
       csstype: registry.npmmirror.com/csstype@3.1.2
       postcss: registry.npmmirror.com/postcss@8.4.29
-      react: 18.2.0
+      react: registry.npmmirror.com/react@18.2.0
       react-dom: 18.2.0(react@18.2.0)
       shallowequal: registry.npmmirror.com/shallowequal@1.1.0
       stylis: registry.npmmirror.com/stylis@4.3.0

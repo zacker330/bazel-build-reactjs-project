@@ -6,54 +6,6 @@ load("@aspect_rules_webpack//webpack:defs.bzl", "webpack_bundle", "webpack_devse
 npm_link_all_packages(name = "node_modules")
 
 
-STATIC_ASSETS = ["public/**"]
-
-lib_deps = [
-        "//:node_modules/react",
-        "//:node_modules/react-dom",
-        "//:node_modules/tailwindcss",
-        "//:node_modules/tailwind-merge",
-        "//:node_modules/@floating-ui/react",
-        "//:node_modules/@material-tailwind/react",
-        "//:node_modules/@floating-ui/dom",
-        "//:node_modules/postcss-loader",
-        "//:node_modules/postcss",
-        "//:node_modules/mini-css-extract-plugin",
-        "//:node_modules/autoprefixer",
-        "//:node_modules/html-webpack-plugin",
-        "//:node_modules/css-loader",
-        "//:node_modules/style-loader",
-        "//:node_modules/react-router-dom",
-        "//:node_modules/react-hook-form",
-        "//:node_modules/file-loader",
-        "//:node_modules/swc-loader",
-        "//:node_modules/@heroicons/react",
-        "//:node_modules/@headlessui/react",
-        "//:node_modules/crypto-js",
-        "//:node_modules/@smithy/util-stream",
-        "//:node_modules/@smithy/smithy-client",
-    ]
-
-
-
-js_library(
-        name =  "lib",
-        srcs = glob(["src/**/*.js", "src/**/*.css", "public/**/*", "src/*.css"]),
-        deps = lib_deps ,
-        data = ["package.json", "tailwind.config.js", "postcss.config.js"]
-)
-
-webpack_bundle(
-    name = "bundle",
-    chdir = package_name(),
-    srcs = [":transpile", ] + glob(STATIC_ASSETS)  + lib_deps,
-    node_modules = "//:node_modules",
-    output_dir = True,
-    entry_point = "//ui:src/index.js",
-    webpack_config = ":webpack.bazel.config.js",
-    deps = [":lib"],
-)
-
 exports_files(
       [".swcrc"],
       visibility = ["//ui:__subpackages__"],
@@ -67,6 +19,45 @@ swc(
 )
 
 
+
+STATIC_ASSETS = ["public/**"]
+
+lib_deps = [
+        ":node_modules/react",
+        ":node_modules/react-dom",
+        ":node_modules/tailwindcss",
+        ":node_modules/tailwind-merge",
+        ":node_modules/@floating-ui/react",
+        ":node_modules/@material-tailwind/react",
+        "//:node_modules/@floating-ui/dom",
+        ":node_modules/postcss-loader",
+        ":node_modules/postcss",
+        ":node_modules/mini-css-extract-plugin",
+        ":node_modules/autoprefixer",
+        ":node_modules/html-webpack-plugin",
+        ":node_modules/css-loader",
+        ":node_modules/style-loader",
+        ":node_modules/react-router-dom",
+        ":node_modules/react-hook-form",
+        ":node_modules/file-loader",
+        ":node_modules/swc-loader",
+        ":node_modules/@heroicons/react",
+        ":node_modules/@headlessui/react",
+        ":node_modules/crypto-js",
+
+    ]
+
+webpack_bundle(
+    name = "bundle",
+    chdir = package_name(),
+    srcs = [":transpile", ] + glob(STATIC_ASSETS) + glob([ "src/**/*.css"]),
+    node_modules = ":node_modules",
+    output_dir = True,
+    entry_point = "//ui:src/index.js",
+    webpack_config = ":webpack.bazel.config.js",
+    deps = lib_deps,
+)
+
 webpack_devserver(
     name = "dev_server",
     chdir = package_name(),
@@ -77,9 +68,9 @@ webpack_devserver(
         "//:node_modules/html-webpack-plugin",
         "//:node_modules/react",
         "//:node_modules/react-dom",
-    ] + [":lib"] + ["package.json", "tailwind.config.js", "postcss.config.js"],
+    ] + ["package.json", "tailwind.config.js", "postcss.config.js"],
     entry_point = "//ui:src/index.js",
-    node_modules = "//:node_modules",
+    node_modules = ":node_modules",
     webpack_config = ":webpack.bazel.config.js",
 )
 
